@@ -13,6 +13,7 @@ void setup() {
   lcd.begin(16, 2);             // Initialize LCD type (x columns, y rows)
   Serial.begin(9600);          // Start Serial Monitor for debugging output
   randomSeed(analogRead(0));   // Seed the random number generator
+  lcd.begin()
 }
 
 void loop() {
@@ -27,6 +28,7 @@ void loop() {
 
   // Call the function that runs the reaction timer game
   reactionGame(); // Need to be defined!!!
+  lcd.print("Hello, World!")
 }
 void reactionGame() {
   lcd.clear();    // Clear the LCD screen
